@@ -63,8 +63,8 @@ def check_frame_value(value):
 def check_data_byte(value):
     if not isinstance(value, Integral):
         raise TypeError('data byte must be int')
-    elif not 0 <= value <= 127:
-        raise ValueError('data byte must be in range 0..127')
+    elif not 0 <= value <= 255:
+        raise ValueError('data byte must be in range 0..255')
 
 
 def check_time(time):
